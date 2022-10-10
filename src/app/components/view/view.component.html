@@ -1,0 +1,133 @@
+
+<section class="container mt-4">
+    <div class="container-aboutUs">
+        <h2>Sobre Nosotros</h2>
+
+        <p>
+             Equipo de profesionales dedicados al sembrío, cosecha y producción de Cannabis medicinal no psicoactiva. Contamos con la producción de distintas variedades de cannabis en un amplio terreno con las condiciones adecuadas para el crecimiento correcto de las mismas.
+        </p>
+
+        <p>
+             Somos un equipo de cultivadores locales, que combinamos nuestras habilidades de cultivo y experiencia para ofrecer a los consumidores de cannabis no psicoactiva, acceso a algunos de los cultivos más meticulosos de Ecuador.
+        </p>
+    </div>
+
+    <div class="image-container">
+        <img src="./assets/images/logo3.jpeg">
+    </div>
+    
+</section>
+
+<!--Seccion Servicios-->
+
+<section class="container-main">
+    <div>
+        <h2 id="servicios">Servicios</h2>
+    </div>
+
+    <div class="container">
+
+        <section class="container-services">
+    
+                <article class="service-detail-card">
+                    <span></span>
+                    <p class="service-card-body">
+                        Ofrecemos productos finales y comercialización de diferentes cultivos medicinales con el fin de mejorar experiencia del usuario y de la industria canábica en el Ecuador
+                    </p>
+                </article>
+               
+            
+                <article class="service-detail-card">
+                    <span></span>
+                    <p class="service-card-body">Ofrecemos productos finales y comercialización de diferentes cultivos medicinales con el fin de mejorar experiencia del usuario y de la industria canábica en el Ecuador</p>
+                </article>
+            
+        </section>
+
+        <section class="container-services">
+            <article class="service-detail-card">
+                <p class="service-card-body">
+                    Ofrecemos productos finales y comercialización de diferentes cultivos medicinales con el fin de mejorar experiencia del usuario y de la industria canábica en el Ecuador
+                </p>
+            </article>
+    
+            <article class="service-detail-card">
+                <p class="service-card-body">
+                    Ofrecemos productos finales y comercialización de diferentes cultivos medicinales con el fin de mejorar experiencia del usuario y de la industria canábica en el Ecuador
+                </p>
+            </article>
+        </section>
+    </div>
+    
+
+</section>
+
+<!------------------Seccion Fotos--------------->
+
+<div class="title-fotos">
+    <h2 id="fotos">Fotos</h2>
+</div>
+
+<section class="container fotos-container">
+    
+    <div class="row cards-fotos-container">
+        <div class="col-12 col-md-6 col-lg-4">
+            <div class="card" style="width: 18rem;" data-bs-toggle="modal" [attr.data-bs-target]="'#modal'">
+                <img src="./assets/photos/photo1.jpeg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-12 col-md-6 col-lg-4">
+            <div class="card" style="width: 18rem;" data-bs-toggle="modal" [attr.data-bs-target]="'#modal1'">
+                <img src="./assets/photos/photo2.jpeg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                </div>
+            </div>
+        </div>
+
+        
+        
+        <div class="col-12 col-md-6 col-lg-4">
+            <div class="card" style="width: 18rem;" data-bs-toggle="modal" [attr.data-bs-target]="'#modal2'">
+                <img src="./assets/photos/photo3.jpeg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-12 col-md-6 col-lg-4">
+            <div class="card" style="width: 18rem;" data-bs-toggle="modal" [attr.data-bs-target]="'#modal3'">
+                <img src="./assets/photos/photo4.jpeg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                </div>
+            </div>
+        </div>
+        
+        <app-pop-up></app-pop-up>
+    </div>
+</section>
+
+<!--Seccion Contactanos-->
+
+<section class="container-contact">
+    <div>
+        <h2> <a id="contactanos"> Contáctanos</a></h2>
+    </div>
+
+    <div class="container">
+        <p>Cualquier consulta que tengas</p>
+        <p>¡No dudes en contactarnos!</p>
+
+        <button [routerLink]="['/contacto']">
+            Click Aquí
+        </button>
+    </div>
+
+</section>
+<app-footer></app-footer>

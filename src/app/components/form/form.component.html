@@ -1,0 +1,51 @@
+<section class="container mt-5">
+    <div class="container-contacto">
+        <h2>Contacta con Nosotros</h2>
+    </div>
+
+    <div class="card mapa">
+        <agm-map [latitude]="lat" [longitude]="long" [zoom]="10">
+            <agm-marker [latitude]="lat" [longitude]="long">
+
+            </agm-marker>
+        </agm-map>
+    </div>
+
+    
+
+    <div class="container-form">
+
+        <section class="container-contacts">
+            <i class="fa-solid fa-phone"></i><p>+593 982740930</p>
+            <br>
+            <i class="fa-solid fa-envelope"></i><p>weedlife@gmail.com</p>
+        </section>
+
+        <div class="container-inputs">
+            <form [formGroup]="formModel" (ngSubmit)="getDataForm()">
+                <div>
+                    <input type="text" class="form-control" id="nombre2" placeholder="Nombre" formControlName="nombre2">
+                    <p class="error" *ngIf="checkControl('nombre2', 'required')">Campo Requerido</p>
+                    <p class="error" *ngIf="checkControl('nombre2', 'minlength')">La longitud del campo debe ser de al menos 3 caracteres</p>
+                </div>
+
+                <div>
+                    <input type="email" class="form-control" id="email" placeholder="Email" formControlName="email">
+                    <p class="error" *ngIf="checkControl('email','required')">Campo Requerido</p>
+                    <p class="error" *ngIf="checkControl('email','pattern')">El formato del email no es correcto</p>
+                </div>
+
+                <div>
+                    <textarea name="" id="" cols="50" rows="10" class="form-control" placeholder="Mensaje"></textarea>
+                </div>
+
+                <input type="submit" class="btn" value="Enviar" [disabled]="!formModel.valid">
+
+            </form>
+        </div>
+        
+    </div>
+    
+</section>
+
+<app-footer></app-footer>
